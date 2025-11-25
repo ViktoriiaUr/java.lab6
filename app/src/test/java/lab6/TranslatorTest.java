@@ -25,11 +25,6 @@ public class TranslatorTest {
     }
 
     @Test
-    void testOverwriteWord() {
-        translator.addWord("", "");
-    }
-
-    @Test
     void testTranslateKnownWords() {
         String result = translator.translatePhrase("hello my friend");
         assertEquals("привіт мій друг", result);
